@@ -45,6 +45,10 @@ public class PatientController {
     public String home(){
         return "home";
     }
+    @GetMapping("/vvv")
+    public String log(){
+        return "login";
+    }
     @GetMapping("/user/patients")
     @ResponseBody
     public List<Patient> listPatients(){

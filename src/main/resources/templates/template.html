@@ -25,7 +25,7 @@
                     <span class="caret"></span></a>
                 <ul class="dropdown-menu">
                     <li><a th:href="@{/user/index}">Chercher</a></li>
-                    <li sec:authorize="hasRole('ADMIN')"><a th:href="@{/admin/formPatients}" >Nouveau</a></li>
+                    <li sec:authorize="hasAuthority('ADMIN')"><a th:href="@{/admin/formPatients}" >Nouveau</a></li>
 
                 </ul>
             </li>
